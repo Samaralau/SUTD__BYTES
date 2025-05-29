@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".RedeemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/purple_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="50dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/redeem_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Point Redeem Shop"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginVertical="16dp" />
+
+        <!-- Current Point Balance -->
+        <TextView
+            android:id="@+id/current_point_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Current Points: 135"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Redeem Options Frame -->
+        <LinearLayout
+            android:id="@+id/redeem_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/darker_gray"
+            android:elevation="2dp"
+            android:layout_margin="20dp">
+
+            <Button
+                android:id="@+id/btn_short_redeem"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Redeem Short Trip - 20 Points"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btn_medium_redeem"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Redeem Medium Trip - 50 Points"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btn_long_redeem"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Redeem Long Trip - 100 Points" />
+        </LinearLayout>
+
+        <!-- Selected Trip Info -->
+        <TextView
+            android:id="@+id/selected_trip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Selected Trip: None"
+            android:textSize="16sp"
+            android:layout_marginVertical="8dp" />
+
+        <!-- Remaining Points -->
+        <TextView
+            android:id="@+id/remaining_point_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Points After Redeem: -"
+            android:textSize="16sp"
+            android:layout_marginVertical="20dp" />
+
+        <!-- Confirm Button -->
+        <Button
+            android:id="@+id/btn_confirm_redeem"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/koistore"
+            android:text="Confirm" />
+    </LinearLayout>
+
+
+    <include layout="@layout/navbar">
+    </include>
+
+</LinearLayout>

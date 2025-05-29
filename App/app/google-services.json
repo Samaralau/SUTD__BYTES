@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "32700842901",
+    "project_id": "sutd-bytes",
+    "storage_bucket": "sutd-bytes.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32700842901:android:a9cde08e2e19899e91ac9c",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpgKxGMZWnNZ3mgJaDB1mdts7EIopc8wI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32700842901:android:30bc9a49abdf747191ac9c",
+        "android_client_info": {
+          "package_name": "com.example.myfirstapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpgKxGMZWnNZ3mgJaDB1mdts7EIopc8wI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

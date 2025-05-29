@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- Food item 1 -->
+        <LinearLayout
+            android:id="@+id/food1_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="75dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/food_quantity_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0x" />
+
+            <TextView
+                android:id="@+id/food_name_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Your cart is empty" />
+
+            <Button
+                android:id="@+id/add_1"
+                android:layout_width="31dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/add_button"
+                android:padding="12dp">
+            </Button>
+
+            <Button
+                android:id="@+id/remove_1"
+                android:layout_width="29dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="18dp"
+                android:background="@drawable/remove_button"
+                android:padding="12dp">
+            </Button>
+
+            <TextView
+                android:id="@+id/food_price_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="NIL" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

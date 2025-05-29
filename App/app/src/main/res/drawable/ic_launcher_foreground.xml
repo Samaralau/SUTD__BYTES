@@ -1,0 +1,60 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background shape (Rectangle) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+
+    <item
+        android:left="10dp"
+        android:top="0dp"> <!-- Adjusted top to make sure it's visible -->
+        <bitmap
+            android:src="@drawable/sutd_logo"
+            android:scaleType="fitXY"
+            android:gravity="top|left"
+            android:width="1dp"
+            android:height="1dp"
+
+            />
+    </item>
+
+    <!-- Second Bitmap -->
+    <item
+        android:top="100dp"
+        android:left="50dp"
+        android:right="50dp">
+        <bitmap
+            android:src="@drawable/app_name"
+            android:gravity="center"
+            android:width="8dp"
+            android:height="8dp" />
+    </item>
+
+    <!-- Third Bitmap -->
+    <item
+        android:top="180dp"
+        android:left="24dp">
+        <bitmap
+            android:src="@drawable/plate_icon"
+            android:gravity="left|center_vertical"
+            android:width="8dp"
+            android:height="8dp" />
+    </item>
+
+    <!-- Fourth Bitmap -->
+    <item
+        android:top="180dp"
+        android:left="120dp">
+        <bitmap
+            android:src="@drawable/handshake"
+            android:gravity="left|center_vertical"
+            android:width="8dp"
+            android:height="8dp" />
+    </item>
+
+
+
+
+</layer-list>

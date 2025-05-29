@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/purple_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+    </LinearLayout>
+
+    <!-- top part -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/textUser"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:text="Logged in as: "
+            android:textColor="#000000"
+            android:textStyle="bold">
+
+        </TextView>
+        <Button
+            android:id="@+id/profile_button"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/user"
+            android:padding="12dp">
+
+        </Button>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Make a Request!"
+        android:textSize="24sp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Selected Store:"
+        android:paddingLeft="10dp"
+        android:textSize="18sp" />
+
+    <!-- Rectangle with text and pic(koi store) -->
+    <FrameLayout
+        android:id="@+id/rectangle_for_koi"
+        android:layout_width="278dp"
+        android:layout_height="84dp"
+        android:layout_gravity="center"
+        android:background="@drawable/koistore">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/store_pic"
+                android:layout_width="75dp"
+                android:layout_height="66dp"
+                android:layout_gravity="right"
+                android:src="@drawable/jumbomilktea_removebg_preview" />
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/StoreTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:text="Store Name: Koi" />
+
+            <TextView
+                android:id="@+id/mall_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Changi City Point" />
+
+            <TextView
+                android:id="@+id/store_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Location: #B1-18" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/food1_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Milk Tea:" />
+
+    <!-- jumbobbt -->
+    <FrameLayout
+        android:id="@+id/rectangle_for_jumbobbt"
+        android:layout_width="191dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:background="@drawable/milktearectangle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="155dp"
+                android:layout_height="88dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/food1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="Jumbo Milk Tea" />
+
+                <TextView
+                    android:id="@+id/food1_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="$5.80" />
+
+                <Button
+                    android:id="@+id/addtocart1"
+                    android:layout_width="29dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/add_circled_solid" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/option1_pic"
+            android:layout_width="48dp"
+            android:layout_height="85dp"
+            android:layout_gravity="left"
+            android:paddingTop="10dp"
+            android:src="@drawable/jumbomilktea_removebg_preview" />
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/food2_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Black Tea:" />
+
+    <!-- black tea -->
+    <FrameLayout
+        android:id="@+id/rectangle_for_lycheetea"
+        android:layout_width="191dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:background="@drawable/milktearectangle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="155dp"
+                android:layout_height="88dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/food2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="7dp"
+                    android:paddingLeft="20dp"
+                    android:text="Lychee Black Tea" />
+
+                <TextView
+                    android:id="@+id/food2_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="$4.90" />
+
+                <Button
+                    android:id="@+id/addtocart2"
+                    android:layout_width="29dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/add_circled_solid" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/option2_pic"
+            android:layout_width="62dp"
+            android:layout_height="83dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/lycheeblacktea" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/gotocart"
+        android:layout_width="159dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/cartbutton"
+        android:text="View Cart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:layout_gravity="center">
+        <include layout="@layout/navbar"></include>
+    </LinearLayout>
+
+</LinearLayout>
+

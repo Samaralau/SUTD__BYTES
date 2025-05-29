@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/main"
+    tools:context=".OrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/purple_background"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/sutd_logo">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textUser"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:text="Logged in as: "
+            android:textColor="#000000"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:src="@drawable/user_icon">
+
+        </ImageView>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="24dp"
+        android:text="Trending now:">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/koi_home"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/koi">
+            </Button>
+
+            <Button
+                android:id="@+id/wokhey_home"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/wok_hey">
+            </Button>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="24dp"
+            android:text="Your favourite:">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/mc_home"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/mc_donald">
+            </Button>
+
+            <Button
+                android:id="@+id/add_fav"
+                android:layout_width="45dp"
+                android:layout_height="39dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/add_button">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:layout_gravity="center">
+        <include layout="@layout/navbar"></include>
+    </LinearLayout>
+
+</LinearLayout>

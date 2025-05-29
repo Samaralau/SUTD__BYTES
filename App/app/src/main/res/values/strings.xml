@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" translatable="false">App</string>
+    <string name="storename" translatable="false">Store Name: %1$s</string>
+    <string name="storeplace" translatable="false">%1$s.</string>
+    <string name="storeaddress" translatable="false">Location: %1$s</string>
+    <string name="distance" translatable="false">Distance: %1$s. (+%2$d POINTS)</string>
+</resources>

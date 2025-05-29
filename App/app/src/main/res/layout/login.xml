@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="50dp"
+    android:background="@drawable/purple_background"
+    android:layout_marginBottom="16dp">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sutd_logo"
+        android:contentDescription="SUTD Logo" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUTD"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BYTES"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shared meals, shared moments."
+        android:textSize="18sp"
+        android:textColor="#FFFFFF" />
+
+    <!-- Icons row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Delivery Icon"
+            android:src="@drawable/delivery_icon" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Person with Food Icon"
+            android:src="@drawable/person_with_food_icon" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Plate Icon"
+            android:src="@drawable/plate_icon" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+<EditText
+android:id="@+id/emailEditText"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="School Email"
+android:inputType="textEmailAddress"
+android:layout_marginStart="32dp"
+android:layout_marginEnd="32dp"
+android:layout_marginTop="6dp"
+    android:padding="12dp"
+    android:background="@drawable/edit_text_background" />
+
+
+<EditText
+android:id="@+id/passwordEditText"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Password"
+android:inputType="textPassword"
+android:layout_marginStart="32dp"
+android:layout_marginEnd="32dp"
+android:layout_marginTop="6dp"
+    android:padding="12dp"
+    android:background="@drawable/edit_text_background" />
+
+
+<Button
+android:id="@+id/loginButton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Log In"
+android:layout_marginStart="32dp"
+android:layout_marginEnd="32dp"
+android:layout_marginTop="6dp"
+    android:padding="12dp"
+    android:background="@drawable/register_button_background" />
+
+
+<TextView
+android:id="@+id/signUpButton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_centerHorizontal="true"
+android:layout_marginStart="32dp"
+android:layout_marginTop="6dp"
+    android:layout_marginEnd="32dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="12dp"
+    android:text="New? Sign up here!"
+    android:textColor="@android:color/holo_blue_light"
+    android:textSize="16sp" />
+
+    </LinearLayout>

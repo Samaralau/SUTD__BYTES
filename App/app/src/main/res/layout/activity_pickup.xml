@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/main"
+    tools:context=".PickupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/purple_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="50dp">
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="303dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Logged in as:">
+            </TextView>
+            <TextView
+                android:id="@+id/role_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Role: ">
+            </TextView>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:src="@drawable/user_icon">
+        </ImageView>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/orderID"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:gravity="left"
+        android:text="Picked request:">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <FrameLayout
+            android:id="@+id/pick_request"
+            android:layout_width="280dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/koistore">
+
+            <ImageView
+                android:id="@+id/store_pic"
+                android:layout_width="70dp"
+                android:layout_height="66dp"
+                android:layout_gravity="right"
+                android:src="@drawable/jumbomilktea_removebg_preview">
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/StoreTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Store name">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/mall_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Changi City Point">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/store_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Location: #B1-18">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/meet_up_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Meet-up point: ">
+                </TextView>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/pickup_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/lightgray">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="7dp"
+                    android:text="Pick-up Order:">
+                </TextView>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="12dp">
+                    <LinearLayout
+                        android:id="@+id/orderListLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </ScrollView>
+                <TextView
+                    android:id="@+id/totalcost"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="Total Cost:">
+
+                </TextView>
+                <Button
+                    android:id="@+id/btn_accept"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Accept"
+                    android:background="@drawable/koistore">
+                </Button>
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/navbar">
+    </include>
+
+</LinearLayout>

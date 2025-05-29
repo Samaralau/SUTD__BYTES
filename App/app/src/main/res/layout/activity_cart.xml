@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".CartActivity">
+
+    <!-- top part colour -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/purple_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="50dp">
+    </LinearLayout>
+
+    <!-- top part log in as and profile button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textUser"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:text="Logged in as: "
+                android:textColor="#000000"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:id="@+id/role_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="ROLE:" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/profile_button"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/user"
+            android:padding="12dp">
+        </Button>
+    </LinearLayout>
+
+    <!-- enter meet up location -->
+    <EditText
+        android:id="@+id/meet_up_location"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Meet-up location"
+        android:inputType="text"
+        android:background="@drawable/edittext_search_style"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888">
+    </EditText>
+
+    <!-- Store name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Store Name:" />
+
+        <TextView
+            android:id="@+id/store_name_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIL" />
+    </LinearLayout>
+    <!-- order summary -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/cart_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- straight line -->
+    <ImageView
+        android:layout_width="968dp"
+        android:layout_height="17dp"
+        android:background="@drawable/straightlinegray">
+    </ImageView>
+
+    <!-- Delivery fee -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery fee:">
+        </TextView>
+
+        <TextView
+            android:id="@+id/delivery_fee_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="NIL">
+        </TextView>
+    </LinearLayout>
+
+    <!-- Redeeming -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redeeming:">
+        </TextView>
+
+        <TextView
+            android:id="@+id/reedeming_distance_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:text="NIL">
+        </TextView>
+    </LinearLayout>
+
+    <!-- Total Price -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total:">
+        </TextView>
+
+        <TextView
+            android:id="@+id/total_price_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="NIL">
+        </TextView>
+    </LinearLayout>
+
+    <!-- Payment method -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment by:">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:text="Cash On Delivery">
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Vouchers:">
+
+    </TextView>
+    <Spinner
+        android:id="@+id/voucherSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/confirm_cart"
+        android:layout_width="159dp"
+        android:layout_height="33dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/cartbutton"
+        android:text="Confirm" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_gravity="center">
+        <include layout="@layout/navbar"></include>
+    </LinearLayout>
+
+</LinearLayout>
