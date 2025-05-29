@@ -6,15 +6,16 @@ Features:
 
 1. Request Food
 
-Students can request meals from food stalls of nearby shopping malls and have them delivered by fellow students.
+   Students can request meals from food stalls of nearby shopping malls and have them delivered by fellow students.
 
 2. Volunteer to Deliver
 
-Help your peers by delivering their food orders. Flexible and rewarding.
+    Help your peers by delivering their food orders. Flexible and rewarding.
 
 3. Earn Points for Deliveries
 
-Delivery volunteers accumulate points for each successful delivery depending on the distance travelled which can be later redeemed for discounts.
+   Delivery volunteers accumulate points for each successful delivery depending on the distance travelled which can be later redeemed for discounts.
+
 
 Note: 
 
